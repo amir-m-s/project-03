@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -235,6 +236,7 @@ section {
 }
 
 #services {
+    padding: 7rem 0;
     text-align: center;
 }
 
@@ -249,6 +251,7 @@ section {
 
 #services > .container {
     margin: 3rem auto;
+    padding-inline: 3rem;
 }
 
 #services .service-card {
