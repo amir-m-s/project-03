@@ -65,6 +65,7 @@ section {
     background: rgba(237, 242, 248, 0.3);
     backdrop-filter: blur( 2.5px );
     -webkit-backdrop-filter: blur( 2.5px );
+    z-index: 111;
 }
 
 .navbar {
@@ -145,6 +146,7 @@ section {
 #cases {
     height: 100vh;
     background: var(--primary-bg);
+    position: relative;
 }
 
 .circles {
@@ -158,16 +160,16 @@ section {
     margin: 1rem 0;
 }
 
-.cases-container {
-    position: relative;
-}
 
-.cases-container .introduction {
+.intro-card {
     position: absolute;
     background: #fff;
-    top: 0;
-    padding: 1.5rem 1.5rem 1.5rem 7rem;
     border-radius: 1rem;
+}
+
+#cases .introduction {
+    padding: 1.5rem 1.5rem 1.5rem 7rem;
+    bottom: 50%;
 }
 
 .introduction h1 {
@@ -177,4 +179,12 @@ section {
 .introduction span {
     font-size: 0.8rem;
     color: var(--gray);
+}
+
+#cases .job {
+    padding: 1rem 2rem;
+    bottom: 30%;
+    left: 20%;
+    font-weight: 500;
+    text-transform: uppercase;
 }
