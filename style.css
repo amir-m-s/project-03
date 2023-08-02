@@ -188,3 +188,22 @@ section {
     font-weight: 500;
     text-transform: uppercase;
 }
+
+.floating-text {
+    position: absolute;
+}
+
+.animation {
+    right: 35%;
+    top: 25%;
+}
+
+.interaction {
+    right: 25%;
+    top: 45%;
+}
+
+.illustration {
+    right: 30%;
+    top: 60%;
+}
