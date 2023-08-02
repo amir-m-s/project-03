@@ -1,12 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+:root {
+    --primary-bg: #edf2f8;
+    --secondary-bg: #fff;
+    --black: #111;
+    --blue: #323bac;
+    --gray: #ccc;
+}
+
 body {
     font-size: 62.5%;
-    color: #212121;
+    color: var(--black);
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
 }
 
 a, span {
@@ -16,8 +27,137 @@ a, span {
 a {
     text-decoration: none;
     color: inherit;
+    transition: 0.3s ease-in-out;
 }
 
 ul {
     list-style: none;
+}
+
+section {
+    padding: 5rem;
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.justify-space-between {
+    justify-content: space-between;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+#header {
+    width: 100%;
+    font-size: 1.3rem;
+    padding: 1rem 0;
+    position: fixed;
+    top: 0;
+    background: rgba(237, 242, 248, 0.3);
+    backdrop-filter: blur( 2.5px );
+    -webkit-backdrop-filter: blur( 2.5px );
+}
+
+.navbar {
+    padding: 1rem 0;
+}
+
+.navbar ul {
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    color: var(--gray);
+}
+
+.navbar li {
+    text-align: center;
+}
+
+.dot {
+    font-size: 0.4rem;
+}
+
+.navbar a {
+    display: block;
+}
+
+.navbar a:hover {
+    color: var(--blue);
+}
+
+.active {
+    color: var(--blue);
+    font-weight: 600;
+}
+
+.navbar li > .dot {
+    visibility: hidden;
+}
+
+.active > .dot {
+    visibility: visible !important;
+}
+
+.menu-icon {
+    text-align: center;
+    width: 2rem;
+    background: var(--blue);
+    color: var(--secondary-bg);
+    aspect-ratio: 2 / 2;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.align-items-baseline {
+    align-items: baseline;
+}
+
+.footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    margin-bottom: 2rem;
+}
+
+.footer > div {
+    align-items: baseline !important;
+}
+
+.footer .social-icons {
+    font-size: 1rem;
+}
+
+.cases {
+    height: 100vh;
+    background: var(--primary-bg);
+}
+
+.circles {
+    position: fixed;
+    right: 8%;
+    top: 30%;
+    color: var(--gray);
+}
+
+.circles ul > li {
+    margin: 1rem 0;
+}
+
+.cases-container {
+    position: relative;
+}
+
+.cases-container .introduction {
+    position: absolute;
+    background: #fff;
+    top: 0
 }
