@@ -157,11 +157,11 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 3rem;
+    width: 1.5em;
     background: var(--secondary-bg);
     border-radius: 50%;
     aspect-ratio: 1 / 1;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .social-icons a:hover {
