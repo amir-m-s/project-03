@@ -68,6 +68,10 @@ section {
     z-index: 111;
 }
 
+.logo {
+    font-weight: 700;
+}
+
 .navbar {
     padding: 1rem 0;
 }
