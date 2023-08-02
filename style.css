@@ -143,6 +143,28 @@ section {
     font-size: 1rem;
 }
 
+.social-icons ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.social-icons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    background: var(--secondary-bg);
+    border-radius: 50%;
+    aspect-ratio: 1 / 1;
+    font-size: 1.2rem;
+}
+
+.social-icons a:hover {
+    background: var(--blue);
+    color: var(--secondary-bg);
+}
+
 #cases {
     height: 100vh;
     background: var(--primary-bg);
