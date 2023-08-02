@@ -233,3 +233,44 @@ section {
     right: 30%;
     top: 60%;
 }
+
+#services {
+    text-align: center;
+}
+
+#services h2 {
+    text-transform: capitalize;
+    font-size: 1.5rem;
+}
+
+#services h2 > span {
+    color: var(--blue);
+}
+
+#services > .container {
+    margin: 3rem auto;
+}
+
+#services .service-card {
+    max-width: 20vw;
+    text-align: left;
+    overflow: hidden;
+}
+
+.service-card-img {
+    overflow: hidden;
+    width: 95%;
+    aspect-ratio: 1 / 1;
+    background: var(--gray);
+    border-radius: 0.6rem;
+}
+
+.service-card-img img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+}
+
+.service-card h3 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
