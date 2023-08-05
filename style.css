@@ -277,3 +277,43 @@ section {
     font-size: 1rem;
     margin-bottom: 0.5rem;
 }
+
+#resume {
+    background: var(--primary-bg);
+}
+
+
+.resume-container {
+    background: var(--light-gray);
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.resume-container .container-card {
+    flex-basis: 15vw;
+    background: var(--secondary-bg);
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.container-card .card-img {
+    width: 100%;
+    background: var(--gray);
+    aspect-ratio: 1 / 1;
+}
+
+.card-img img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+}
+
+.container-card h3 {
+    padding: 0.5rem 1rem;
+}
+
+.container-card p {
+    padding: 0 1rem 0.5rem;
+}
