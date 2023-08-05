@@ -274,8 +274,13 @@ section {
 }
 
 .service-card h3 {
-    font-size: 1rem;
-    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+    padding: 0.5rem 1rem;
+}
+
+.service-card p {
+    font-size: 0.85rem;
+    padding: 0 1rem 0.5rem; 
 }
 
 #resume {
