@@ -502,3 +502,39 @@ section h2 {
     text-decoration: none;
     color: hsl(236, 55%, 34%)
 }
+
+@media (max-width: 950px){
+    #header .logo {
+        font-size: 1rem;
+    }
+    
+    .navbar ul{
+        font-size: 0.7rem;
+    }
+
+    .menu-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 650px) {
+    .navbar {
+        display: none;
+        height: 0;
+        transition: all 0.3s ease-in-out;
+    }
+
+}
+
+@media (max-width: 400px) {
+    #header .logo {
+        font-size: 0.8rem;
+    }
+
+    .menu-icon {
+        font-size: 0.8rem;
+    }
+}
