@@ -38,7 +38,7 @@ ul {
 }
 
 section {
-    padding: 5rem;
+    padding: 7rem;
 }
 
 section > h2 {
@@ -285,6 +285,7 @@ section > h2 {
 
 #resume {
     background: var(--primary-bg);
+    padding: 0;
 }
 
 
@@ -345,7 +346,7 @@ section > h2 {
 
 
 section h2 {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
 }
 
 .skills-list {
