@@ -504,6 +504,17 @@ section h2 {
 }
 
 @media (max-width: 950px){
+    section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    section h2 {
+        font-size: 1.3rem;
+    }
+    
     #header .logo {
         font-size: 1rem;
     }
@@ -518,6 +529,22 @@ section h2 {
         align-items: center;
         font-size: 1rem;
     }
+
+    .introduction h1 {
+        font-size: 1.5rem;
+    }
+
+    .introduction span {
+        font-size: 0.7rem;
+    }
+
+    .job {
+        font-size: 0.6rem;
+    }
+
+    .floating-text {
+        font-size: 0.5rem;
+    }
 }
 
 @media (max-width: 650px) {
@@ -527,6 +554,48 @@ section h2 {
         transition: all 0.3s ease-in-out;
     }
 
+    .cases-container {
+        display: block;
+        text-align: center;
+    }
+
+    .intro-card {
+        position: static;
+        width: auto;
+    }
+
+    section {
+        padding: 5rem 2.5rem;
+    }
+
+
+    #cases .introduction {
+        display: flex;
+        padding: 1rem 0.5rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+
+    .introduction h1 {
+        font-size: 1.1rem;
+    }
+
+    .introduction span {
+        font-size: 0.6rem;
+    }
+
+    #cases .job {
+        text-align: center;
+        font-size: 0.5rem;
+    }
+
+    .floating-text {
+        position: static;
+        display: inline-block;
+        margin: 1rem;
+    }
 }
 
 @media (max-width: 400px) {
