@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    border: none;
 }
 
 :root {
@@ -428,4 +429,69 @@ section h2 {
 
 .graph-item:nth-child(6) {
     background: #f0f4fa;
+}
+
+#contact {
+    text-align: center;
+    padding: 7rem 0 8rem;
+}
+
+.contact-info {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    font-size: 1.5rem;
+    gap: 3rem;
+}
+
+.contact-info .contact-box {
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 1rem;
+}
+
+.contact-box:nth-child(1) {
+    background: #fef4f6;
+}
+
+.contact-box:nth-child(2) {
+    background: #f2f7fc;
+}
+
+.contact-form {
+    margin: 0 auto;
+    width: 70%;
+}
+
+.contact-info {
+    width: 100%;
+}
+
+.contact-info input, #message {
+    width: 100%;
+    padding: 0.5rem;
+    border-bottom: 1px solid var(--light-gray);
+    outline: none;
+    transition: all 0.3s ease-in-out;
+    font-family: inherit;
+}
+
+.contact-info input:focus, #message:focus {
+    border-bottom: 1px solid var(--black);
+}
+
+.contact-form input[type="button"]{
+    cursor: pointer;
+    background: transparent;
+    color: var(--blue);
+    font-weight: 800;
+    text-transform: uppercase;
+    text-decoration: underline;
+    margin: 2rem 0;
+    font-size: 1rem;
 }
