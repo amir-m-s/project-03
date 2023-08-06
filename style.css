@@ -369,3 +369,62 @@ section h2 {
     color: var(--gray);
     text-transform: uppercase;
 }
+
+.percentage-graph {
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.percentage-graph .graph-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    width: 30%;
+    aspect-ratio: 1 / 1;
+    font-size: 1rem;
+    background: var(--blue);
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.graph-item > div {
+    position: absolute;
+    visibility: hidden;
+    top: 35%;
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+}
+
+.graph-item:hover > div {
+    visibility: visible;
+    opacity: 1;
+}
+
+.graph-item:nth-child(1) {
+    background: #fff9f3;
+}
+
+.graph-item:nth-child(2) {
+    background: #eaf5fa;
+}
+
+.graph-item:nth-child(3) {
+    background: #f8f1ff;
+}
+.graph-item:nth-child(4) {
+    background: #f0f4fa;
+}
+
+.graph-item:nth-child(5) {
+    background: #fff4f1;
+}
+
+.graph-item:nth-child(6) {
+    background: #f0f4fa;
+}
