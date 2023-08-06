@@ -361,6 +361,7 @@ section h2 {
 .skills-list li {
     margin: 1rem 0;
     text-transform: capitalize;
+    cursor: pointer;
 }
 
 .company {
