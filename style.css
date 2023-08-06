@@ -547,6 +547,14 @@ section h2 {
     .floating-text {
         font-size: 0.5rem;
     }
+
+    .service-card h3{
+        font-size: 1rem;;
+    }
+
+    .service-card p {
+        font-size: 0.75rem;
+    }
 }
 
 @media (max-width: 650px) {
@@ -598,9 +606,34 @@ section h2 {
         display: inline-block;
         margin: 1rem;
     }
+    
+
+    .flex {
+        align-items: center !important;
+    }
+
+    .service-container {
+        max-width: 100% !important;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .service-card {
+        max-width: 100% !important;
+        margin-bottom: 1rem;
+    }
+
+    .container {
+        width: 100%;
+        padding: 0 5vw;
+    }
 }
 
 @media (max-width: 400px) {
+
+    section h2{
+        font-size: 1rem !important;
+    }
     #header .logo {
         font-size: 0.8rem;
     }
