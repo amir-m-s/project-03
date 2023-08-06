@@ -363,10 +363,11 @@ section h2 {
     margin: 1rem 0;
     text-transform: capitalize;
     cursor: pointer;
+    font-size: 1rem;
 }
 
 .company {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
     font-weight: 600;
     color: var(--gray);
     text-transform: uppercase;
@@ -387,7 +388,7 @@ section h2 {
     align-items: center;
     flex-direction: column;
     position: relative;
-    width: 30%;
+    width: 27%;
     aspect-ratio: 1 / 1;
     font-size: 1rem;
     background: var(--blue);
@@ -398,9 +399,10 @@ section h2 {
 .graph-item > div {
     position: absolute;
     visibility: hidden;
-    top: 35%;
+    top: 32%;
     transition: all 0.5s ease-in-out;
     opacity: 0;
+    font-size: 0.8rem;
 }
 
 .graph-item:hover > div {
@@ -442,7 +444,7 @@ section h2 {
     justify-content: center;
     align-items: center;
     padding: 1rem;
-    font-size: 1.5rem;
+    font-size: 1rem;
     gap: 3rem;
 }
 
@@ -473,7 +475,7 @@ section h2 {
 }
 
 .contact-info input, #message {
-    width: 100%;
+    width: 80%;
     padding: 0.5rem;
     border-bottom: 1px solid var(--light-gray);
     outline: none;
@@ -489,9 +491,14 @@ section h2 {
     cursor: pointer;
     background: transparent;
     color: var(--blue);
-    font-weight: 800;
+    font-weight: 600;
     text-transform: uppercase;
     text-decoration: underline;
     margin: 2rem 0;
     font-size: 1rem;
+}
+
+.contact-form input[type="button"]:hover {
+    text-decoration: none;
+    color: hsl(236, 55%, 34%)
 }
