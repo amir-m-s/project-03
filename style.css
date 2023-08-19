@@ -290,6 +290,7 @@ section > h2 {
 
 
 .resume-container {
+    padding: 4rem;
     display: flex;
     gap: 1rem;
     justify-content: center;
