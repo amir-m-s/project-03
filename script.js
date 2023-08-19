@@ -1,6 +1,7 @@
 // Navigation scroll behavior
 const sections = document.querySelectorAll("section");
 const nav_links = document.querySelectorAll("nav ul li a");
+const circles = document.querySelectorAll(".circles ul li a");
 
 function nav_color() {
     const from_top = window.scrollY;
@@ -16,6 +17,14 @@ function nav_color() {
                     link.parentElement.classList.add("active");
                 } else {
                     link.parentElement.classList.remove("active");
+                }
+            });
+
+            circles.forEach(circle_link => {
+                if(circle_link.getAttribute("href") === `#${target_id}`) {
+                    circle_link.parentElement.classList.add("active");
+                } else {
+                    circle_link.parentElement.classList.remove("active");
                 }
             });
         }
