@@ -304,7 +304,7 @@ section > h2 {
     overflow: hidden;
 }
 
-.container-card .card-img {
+.container-card  > .card-img {
     width: 100%;
     background: var(--gray);
     aspect-ratio: 1 / 1;
@@ -554,6 +554,10 @@ section h2 {
 
     .service-card p {
         font-size: 0.75rem;
+    }
+
+    .resume-container .container-card {
+        flex-basis: 5vw;
     }
 }
 
