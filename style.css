@@ -115,10 +115,13 @@ section > h2 {
 
 .navbar li > .dot {
     visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
 }
 
 .active > .dot {
     visibility: visible !important;
+    opacity: 1 !important;
 }
 
 .menu-icon {
