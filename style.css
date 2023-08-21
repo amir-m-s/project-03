@@ -296,9 +296,7 @@ section > h2 {
     padding: 4rem;
     display: flex;
     gap: 1rem;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
 .resume-container .container-card {
@@ -507,6 +505,10 @@ section h2 {
 .contact-form input[type="button"]:hover {
     text-decoration: none;
     color: hsl(236, 55%, 34%)
+}
+
+.grid {
+    display: grid;
 }
 
 @media (max-width: 950px){
