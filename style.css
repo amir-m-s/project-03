@@ -81,6 +81,7 @@ section > h2 {
 }
 
 .navbar {
+    order: 1;
     padding: 1rem 0;
 }
 
@@ -99,6 +100,11 @@ section > h2 {
 
 .dot {
     font-size: 0.4rem;
+}
+
+.menu-icon {
+    visibility: hidden;
+    order: 2;
 }
 
 .navbar a {
@@ -592,11 +598,29 @@ section h2 {
 
 }
 
+.visible {
+    visibility: visible !important;
+}
+
 @media (max-width: 650px) {
+    .header-container {
+        flex-wrap: wrap !important;
+        align-items: start !important;
+    }
+
+    .menu-icon {
+        visibility: visible;
+    }
+
     .navbar {
-        display: none;
-        height: 0;
+        order: 2;
+        position: static;
+        /* display: none; */
         transition: all 0.3s ease-in-out;
+    }
+
+    .navbar ul {
+        display: block;
     }
 
     .cases-container {

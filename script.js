@@ -49,3 +49,13 @@ function nav_color() {
 
 // Whenever user scrolls on screen, we should check what section is that user is watching and handle that
 window.addEventListener("scroll", nav_color);
+
+// Mobile menu
+const menu_btn = document.querySelector(".mobile-menu");
+const menu = document.querySelector(".navbar");
+
+function toggle_menu() {
+    if (menu.classList.contains("visible")) {
+        menu.classList.remove("visible");
+    }
+}
