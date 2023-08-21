@@ -13,6 +13,7 @@
     --secondary-bg: #fff;
     --black: #111;
     --blue: #323bac;
+    --blue-light: hsl(236, 55%, 74%);
     --gray: #747474;
     --light-gray: #ccc;
 }
@@ -191,10 +192,13 @@ section > h2 {
     color: var(--gray);
 }
 
-.circles ul > li {
+.circles li {
     margin: 1rem 0;
 }
 
+.circles a:hover {
+    color: var(--blue-light);
+}
 
 .intro-card {
     position: absolute;
@@ -288,7 +292,7 @@ section > h2 {
 
 #resume {
     background: var(--primary-bg);
-    padding: 0;
+    padding: 0 6rem;
 }
 
 
@@ -572,6 +576,10 @@ section h2 {
 
     .service-card p {
         font-size: 0.75rem;
+    }
+
+    #resume {
+        padding-inline: 1.5rem;
     }
 
     .resume-container .container-card {
