@@ -51,11 +51,15 @@ function nav_color() {
 window.addEventListener("scroll", nav_color);
 
 // Mobile menu
-const menu_btn = document.querySelector(".mobile-menu");
+const menu_btn = document.querySelector(".menu-icon");
 const menu = document.querySelector(".navbar");
 
 function toggle_menu() {
     if (menu.classList.contains("visible")) {
         menu.classList.remove("visible");
+    } else {
+        menu.classList.add("visible");
     }
 }
+
+menu_btn.addEventListener("click", toggle_menu);

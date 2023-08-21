@@ -600,14 +600,17 @@ section h2 {
 
 .visible {
     visibility: visible !important;
+    display: block !important;
 }
 
 @media (max-width: 650px) {
     .header-container {
-        flex-wrap: wrap !important;
-        align-items: start !important;
+        flex-direction: column;
     }
 
+    .header-container > .flex {
+        width: 100%;
+    }
     .menu-icon {
         visibility: visible;
     }
@@ -615,7 +618,7 @@ section h2 {
     .navbar {
         order: 2;
         position: static;
-        /* display: none; */
+        display: none;
         transition: all 0.3s ease-in-out;
     }
 
