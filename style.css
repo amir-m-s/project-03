@@ -331,6 +331,7 @@ section > h2 {
     text-align: center;
     font-size: 1.2rem;
     font-weight: 500;
+    padding: 3rem;
 }
 
 .all-cases a {
@@ -349,6 +350,11 @@ section > h2 {
 
 section h2 {
     font-size: 1.8rem;
+}
+
+.skills-container {
+    margin: 0 auto;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .skills-list {
@@ -377,11 +383,14 @@ section h2 {
 
 .percentage-graph {
     width: 70%;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(75px, 1fr));
+    /* justify-content: center;
     align-items: center;
-    display: flex;
-    flex-wrap: wrap;
+    display: flex; */
+    /* flex-wrap: wrap; */
     gap: 1rem;
+    margin: auto;
 }
 
 .percentage-graph .graph-item {
@@ -390,12 +399,13 @@ section h2 {
     align-items: center;
     flex-direction: column;
     position: relative;
-    width: 27%;
     aspect-ratio: 1 / 1;
     font-size: 1rem;
     background: var(--blue);
     cursor: pointer;
     border-radius: 50%;
+    transition: 0.2s ease-in-out;
+    overflow: hidden;
 }
 
 .graph-item > div {
@@ -404,12 +414,14 @@ section h2 {
     top: 32%;
     transition: all 0.5s ease-in-out;
     opacity: 0;
-    font-size: 0.8rem;
+    font-size: clamp(0.8rem, 1vh + 0.1rem, 0.4rem);
+    background: inherit;
 }
 
 .graph-item:hover > div {
-    visibility: visible;
-    opacity: 1;
+    content-visibility: visible !important;
+    visibility: visible !important;
+    opacity: 1 !important;
 }
 
 .graph-item:nth-child(1) {
@@ -565,6 +577,11 @@ section h2 {
     .resume-container .container-card {
         flex-basis: 5vw;
     }
+
+    .skills-list {
+        text-align: center;
+    }
+
 }
 
 @media (max-width: 650px) {
