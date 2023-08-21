@@ -150,7 +150,7 @@ section > h2 {
     width: 100%;
     bottom: 0;
     margin-bottom: 2rem;
-    z-index: -1;
+    z-index: 0;
 }
 
 .footer > div {
