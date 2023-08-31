@@ -510,6 +510,10 @@ section h2 {
     font-family: inherit;
 }
 
+#message {
+    width: 77%;
+}
+
 .contact-info input:focus, #message:focus {
     border-bottom: 1px solid var(--black);
 }
